@@ -64,7 +64,39 @@
                 <td>5</td>  
             </tr>
         </table>
+
+        <hr>
+        <h3> Code Display </h3>
+        <h4> Algebra </h4>
+        <blockquote> As a single word with an article or in the plural, "an algebra" or "algebras" denotes a 
+            specific mathematical structure, whose precise definition depends on the context. Usually, the structure 
+            has an addition, multiplication, and scalar multiplication . When some authors use the term "algebra", they make a subset associative, commutative, 
+            unital, and/or finite-dimensional, which allows for n-ary operations.
+        </blockquote>
+
+        <a href = https://en.wikipedia.org/wiki/Algebra> source link </a>
+
+        <pre>
+            pair<int, int> fib (int n) {
+                if (n == 0)
+                    return {0, 1};
+            
+                auto p = fib(n >> 1);
+                int c = p.first * (2 * p.second - p.first);
+                int d = p.first * p.first + p.second * p.second;
+                if (n & 1)
+                    return {d, c + d};
+                else
+                    return {c, d};
+            }
+        </pre>
         
+
+    </body>
+</html>
+
+
+
 
     </body>
 </html>
